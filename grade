@@ -1,0 +1,17 @@
+print("Exam Grade Calculator")
+exam = input("Name of exam: ")
+max = int(input("Max possible score: "))
+score = int(input("Your score: "))
+percentage = int((score/max)*100)
+if percentage >= 90:
+  print("You scored",percentage, "which is an A.")
+elif percentage >= 80 and percentage <= 89:
+  print("You scored",percentage, "which is an A-.")
+elif percentage >= 70 and percentage <= 79:
+  print("You scored",percentage, "which is a B.")
+elif percentage >= 60 and percentage <= 69:
+  print("You scored",percentage, "which is a C.")
+elif percentage >= 50 and percentage <= 59:
+  print("You scored",percentage, "which is a D.")
+else:
+  print("You scored",percentage, "which is an U.")
